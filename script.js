@@ -120,7 +120,8 @@ function renderCustomersTable() {
     const tbody = document.getElementById('customersTableBody');
     
     if (customers.length === 0) {
-        tbody.innerHTML = '<tr class="empty-row"><td colspan="6" class="empty-message">No customers yet. Add one to get started!</td></tr>';
+        tbody.innerHTML =
+        '<tr class="empty-row"><td colspan="3" class="empty-message">No customers match your search.</td></tr>';
         return;
     }
 
@@ -142,19 +143,16 @@ function renderCustomersTable() {
         }
 
         return `
-            <tr>
-                <td><strong>${customer.name}</strong></td>
-                <td>${formatCurrency(customer.initialAmount)}</td>
-                <td>${formatCurrency(customer.paidAmount)}</td>
-                <td>${formatCurrency(debt)}</td>
-                <td><span class="status-badge ${statusClass}">${status}</span></td>
-                <td>
-                    <div class="action-buttons">
-                        <button class="btn-icon edit" onclick="showCustomerDetail(${customer.id})" title="View Details">📝</button>
-                        <button class="btn-icon delete" onclick="deleteCustomer(${customer.id})" title="Delete">🗑️</button>
-                    </div>
-                </td>
-            </tr>
+        <tr>
+            <td><strong>${customer.name}</strong></td>
+            <td><strong>${formatCurrency(debt)}</strong></td>
+            <td>
+                <div class="action-buttons">
+                    <button class="btn-icon edit" onclick="showCustomerDetail(${customer.id})" title="Edit">📝</button>
+                    <button class="btn-icon delete" onclick="deleteCustomer(${customer.id})" title="Delete">🗑️</button>
+                </div>
+            </td>
+        </tr>
         `;
     }).join('');
 }
