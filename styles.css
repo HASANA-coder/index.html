@@ -507,32 +507,32 @@ body {
     color: var(--text-dark);
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.balance-info {
+    display: flex;
     gap: 20px;
 }
 
-.info-item {
-    padding: 16px;
-    background: var(--bg-gray);
+.balance-info-item {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
     border-radius: 8px;
+    color: white;
+    text-align: center;
 }
 
-.info-item label {
+.balance-info-label {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
-    color: var(--text-gray);
-    text-transform: uppercase;
+    opacity: 0.9;
     margin-bottom: 8px;
-    letter-spacing: 0.5px;
 }
 
-.info-item p {
-    font-size: 24px;
+.balance-info-amount {
+    display: block;
+    font-size: 32px;
     font-weight: 700;
-    color: var(--primary-dark);
 }
 
 /* Action Cards */
