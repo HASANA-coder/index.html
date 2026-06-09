@@ -6,7 +6,8 @@ let filteredCustomers = [];
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updateDashboard();
-    renderCustomersTable()
+    renderCustomersTable();
+    updateBalanceDisplay();
 });
 
 // ==================== Navigation ====================
@@ -25,6 +26,7 @@ function showCustomers() {
     document.querySelectorAll('.nav-item')[1].classList.add('active');
     clearSearch();
     renderCustomersTable();
+    updateBalanceDisplay();
 }
 
 function showCustomerDetail(id) {
@@ -97,6 +99,20 @@ function updateDashboard() {
     } else {
         document.getElementById('topDebtorsContainer').innerHTML = '<p class="empty-state">No customers currently in debt.</p>';
     }
+}
+
+// ==================== Update Balance Display ====================
+function updateBalanceDisplay() {
+    let totalBalance = 0;
+    
+    customers.forEach(customer => {
+        const debt = customer.initialAmount - customer.paidAmount;
+        if (debt > 0) {
+            totalBalance += debt;
+        }
+    });
+    
+    document.getElementById('balanceAmount').textContent = formatCurrency(totalBalance);
 }
 
 // ==================== Customers Management ====================
@@ -177,6 +193,7 @@ function submitAddCustomer(e) {
     closeAddCustomerModal();
     renderCustomersTable();
     updateDashboard();
+    updateBalanceDisplay();
 }
 
 // ==================== Delete Customer ====================
@@ -186,6 +203,7 @@ function deleteCustomer(id) {
         saveCustomers();
         renderCustomersTable();
         updateDashboard();
+        updateBalanceDisplay();
     }
 }
 
@@ -203,17 +221,9 @@ function updateCustomerDetail() {
     if (!customer) return;
 
     document.getElementById('detailCustomerName').textContent = customer.name;
-    document.getElementById('detailInitialAmount').textContent = formatCurrency(customer.initialAmount);
-    document.getElementById('detailPaidAmount').textContent = formatCurrency(customer.paidAmount);
     
     const debt = customer.initialAmount - customer.paidAmount;
     document.getElementById('detailRemainingAmount').textContent = formatCurrency(debt);
-    
-    let status = 'Paid';
-    if (debt > 0) {
-        status = customer.paidAmount > 0 ? 'Partially Paid' : 'Pending';
-    }
-    document.getElementById('detailStatus').textContent = status;
 
     // Clear input fields
     document.getElementById('addPaymentAmount').value = '';
@@ -239,6 +249,7 @@ function addPayment() {
     saveCustomers();
     updateCustomerDetail();
     updateDashboard();
+    updateBalanceDisplay();
     document.getElementById('addPaymentAmount').value = '';
 }
 
@@ -260,6 +271,7 @@ function subtractPayment() {
     saveCustomers();
     updateCustomerDetail();
     updateDashboard();
+    updateBalanceDisplay();
     document.getElementById('subtractPaymentAmount').value = '';
 }
 
@@ -270,6 +282,7 @@ function filterCustomers() {
     if (!searchTerm) {
         filteredCustomers = [];
         renderCustomersTable();
+        updateBalanceDisplay();
         return;
     }
 
@@ -277,6 +290,7 @@ function filterCustomers() {
         customer.name.toLowerCase().includes(searchTerm)
     );
     renderCustomersTable();
+    updateBalanceDisplay();
 }
 
 function clearSearch() {
