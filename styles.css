@@ -249,7 +249,7 @@ body {
 /* Search Container */
 .search-container {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .search-input {
@@ -275,6 +275,33 @@ body {
     transform: translateY(-50%);
     font-size: 18px;
     color: var(--text-light);
+}
+
+/* Balance Display */
+.balance-display {
+    margin-bottom: 24px;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+    padding: 20px 24px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+}
+
+.balance-label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.balance-amount {
+    font-size: 28px;
+    font-weight: 700;
 }
 
 /* Table */
