@@ -1,172 +1,274 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)https://customer-ledger-%2Dhasanahassan777.replit.app/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>PayTrack</title>
-    <meta name="description" content="PayTrack — built on Replit. Update this description to reflect the app.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="PayTrack">
-    <meta property="og:description" content="PayTrack — built on Replit. Update this description to reflect the app.">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PayTrack">
-    <meta name="twitter:description" content="PayTrack — built on Replit. Update this description to reflect the app.">
-    <link rel="icon" type="image/svg+xml" href="https://customer-ledger--hasanahassan777.replit.app/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./PayTrack_files/css2" rel="stylesheet">
-    <script type="module" crossorigin="" src="./PayTrack_files/index-40upBgzN.js.download"></script>
-    <link rel="stylesheet" crossorigin="" href="./PayTrack_files/index-B2Ma9LY6.css">
-  </head>
-  <body>
-    <div id="root"><div class="min-h-screen bg-background flex flex-col md:flex-row"><aside class="w-full md:w-64 bg-card border-r border-border md:min-h-screen flex flex-col"><div class="p-6 border-b border-border flex items-center gap-3"><div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-primary-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><span class="font-bold text-lg tracking-tight">PayTrack</span></div><nav class="flex-1 p-4 space-y-1"><a data-testid="nav-dashboard" href="https://customer-ledger--hasanahassan777.replit.app/" class="flex items-center gap-3 px-3 py-2.5 rounded-md transition-colors text-sm font-medium bg-primary/10 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-dashboard w-4 h-4" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>Dashboard</a><a data-testid="nav-customers" href="https://customer-ledger--hasanahassan777.replit.app/customers" class="flex items-center gap-3 px-3 py-2.5 rounded-md transition-colors text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>Customers</a></nav><div class="p-4 border-t border-border"><div class="mb-3 px-3 py-2"><p class="text-xs text-muted-foreground">Signed in as</p><p class="text-sm font-medium text-foreground truncate" data-testid="text-username">Hasanahassan777</p></div><button data-testid="button-logout" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-md transition-colors text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out w-4 h-4" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9"></path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg>Log out</button></div></aside><main class="flex-1 flex flex-col overflow-hidden"><div class="flex-1 overflow-y-auto p-4 md:p-8"><div class="max-w-6xl mx-auto w-full"><div class="space-y-6"><div><h1 class="text-3xl font-bold tracking-tight">Overview</h1><p class="text-muted-foreground mt-1">Here's what's happening with your ledger today.</p></div><div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4"><div class="rounded-xl border bg-card text-card-foreground border-t-4 border-t-primary shadow-sm hover-elevate"><div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0"><div class="tracking-tight text-sm font-medium text-muted-foreground">Total Active Debt</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4 text-primary" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><div class="p-6 pt-0"><div class="text-2xl font-bold text-foreground" data-testid="text-total-debt">$0.00</div><p class="text-xs text-muted-foreground mt-1">Across all customers</p></div></div><div class="rounded-xl border bg-card text-card-foreground shadow-sm hover-elevate"><div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0"><div class="tracking-tight text-sm font-medium text-muted-foreground">Total Paid</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right w-4 h-4 text-green-600" aria-hidden="true"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg></div><div class="p-6 pt-0"><div class="text-2xl font-bold text-foreground" data-testid="text-total-paid">$0.00</div><p class="text-xs text-muted-foreground mt-1">Lifetime payments received</p></div></div><div class="rounded-xl border bg-card text-card-foreground shadow-sm hover-elevate"><div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0"><div class="tracking-tight text-sm font-medium text-muted-foreground">Customers in Debt</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-4 h-4 text-muted-foreground" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><div class="p-6 pt-0"><div class="text-2xl font-bold" data-testid="text-customers-in-debt">0</div><p class="text-xs text-muted-foreground mt-1">Out of 0 total customers</p></div></div><div class="rounded-xl border bg-card text-card-foreground shadow-sm hover-elevate"><div class="p-6 flex flex-row items-center justify-between pb-2 space-y-0"><div class="tracking-tight text-sm font-medium text-muted-foreground">Highest Debtor</div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-4 h-4 text-destructive" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg></div><div class="p-6 pt-0"><div class="text-xl font-bold truncate" data-testid="text-max-debtor">None</div><p class="text-xs text-destructive font-medium mt-1">$0.00</p></div></div></div><div class="grid gap-6 md:grid-cols-2"><div class="rounded-xl border bg-card text-card-foreground shadow-sm"><div class="flex flex-col space-y-1.5 p-6"><div class="font-semibold leading-none tracking-tight">Top Debtors</div><div class="text-sm text-muted-foreground">Customers with the highest outstanding balances.</div></div><div class="p-6 pt-0"><div class="text-center py-8 text-muted-foreground border-2 border-dashed border-border rounded-lg"><p>No customers currently in debt.</p></div></div></div></div></div></div></div></main></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div></div>
-  <script src="./PayTrack_files/replit-pill.global.js.download" data-referral-code="tfxqmjb1y5ly" data-repl-id="6ed360cc-65e6-425c-9809-bc0352db5e8e"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTrack - Customer Payment Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">📊</div>
+                <span>PayTrack</span>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-item active" onclick="showDashboard()">
+                    <span class="icon">📈</span>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" onclick="showCustomers()">
+                    <span class="icon">👥</span>
+                    <span>Customers</span>
+                </button>
+            </nav>
+        </aside>
 
-<div id="replit-pill-host"><template shadowrootmode="closed"><style>
-        #replit-pill {
-          position: fixed;
-          bottom: 48px;
-          right: 48px;
-          border-radius: 120px;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-          font-size: 12px;
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          padding: 6px 12px;
-          z-index: 1000000;
-          white-space: nowrap;
-          cursor: pointer;
-          overflow: hidden;
-          background-color: rgba(0, 0, 0, 0.4);
-          backdrop-filter: blur(6px);
-          -webkit-backdrop-filter: blur(6px);
-          color: #f0f2f6;
-          box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05), 1px 1px 1px 0px rgba(255, 255, 255, 0.1);
-          transition:
-            transform 0.2s ease,
-            background-color 400ms cubic-bezier(0.2, 0.6, 0.2, 1),
-            box-shadow 400ms cubic-bezier(0.2, 0.6, 0.2, 1);
-        }
-        #replit-pill[data-state="cta"] {
-          background-color: rgba(38, 20, 12, 0.55);
-          color: #faf6f1;
-          box-shadow:
-            0 8px 24px rgba(255, 90, 30, 0.28),
-            1px 1px 1px 0px rgba(0, 0, 0, 0.05),
-            inset 0 0 0 1px rgba(255, 140, 70, 0.18);
-        }
-        #replit-pill:hover {
-          transform: scale(1.05);
-        }
-        #replit-pill .shimmer {
-          position: absolute;
-          inset: 0;
-          transform: translateX(-100%);
-          transition: transform 0.7s ease-in-out;
-          background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
-          pointer-events: none;
-        }
-        #replit-pill:hover .shimmer {
-          transform: translateX(100%);
-        }
-        #replit-pill .badge-content {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          position: relative;
-          flex: 0 0 auto;
-        }
-        #replit-pill .replit-logo {
-          color: currentColor;
-        }
-        #replit-pill .flip {
-          position: relative;
-          display: inline-block;
-          height: 20px;
-          overflow: hidden;
-          font-weight: 500;
-          line-height: 20px;
-          color: currentColor;
-        }
-        #replit-pill .flip.ready {
-          transition: width 300ms cubic-bezier(0.2, 0.6, 0.2, 1);
-        }
-        #replit-pill .row {
-          position: absolute;
-          inset: 0 auto 0 0;
-          display: flex;
-          align-items: center;
-          white-space: nowrap;
-          will-change: transform, opacity;
-          transform: translateY(-110%);
-          opacity: 0;
-          line-height: 1;
-        }
-        #replit-pill .row.in {
-          animation: replit-pill-roll-in 380ms cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
-        }
-        #replit-pill .row.out {
-          animation: replit-pill-roll-out 380ms cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
-        }
-        @keyframes replit-pill-roll-in {
-          from { transform: translateY(110%); opacity: 0; }
-          to   { transform: translateY(0);    opacity: 1; }
-        }
-        @keyframes replit-pill-roll-out {
-          from { transform: translateY(0);     opacity: 1; }
-          to   { transform: translateY(-110%); opacity: 0; }
-        }
-        #replit-pill .close-button {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 2px;
-          flex: 0 0 auto;
-          border-radius: 64px;
-          width: 12px;
-          height: 12px;
-          min-width: 0;
-          cursor: pointer;
-          border: none;
-          box-sizing: border-box;
-          background-color: transparent;
-          transition: background-color 0.2s ease;
-        }
-        #replit-pill .close-button:hover {
-          background-color: rgba(255, 255, 255, 0.1);
-        }
-        #replit-pill .close-button:focus-visible {
-          outline: 1px solid #e6e9ef;
-          outline-offset: 1px;
-        }
-        #replit-pill .close-icon {
-          width: 8px;
-          height: 8px;
-          color: #e6e9ef;
-        }
-        #replit-pill[data-state="cta"] .close-icon {
-          color: #faf6f1;
-        }
-        #replit-pill[data-state="cta"] .close-button:focus-visible {
-          outline-color: #faf6f1;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          #replit-pill,
-          #replit-pill .flip,
-          #replit-pill .row,
-          #replit-pill .shimmer {
-            transition: none;
-          }
-          #replit-pill .row.in,
-          #replit-pill .row.out {
-            animation: none;
-          }
-        }
-      </style><div id="replit-pill" data-state="brand"><div class="shimmer"></div><div class="badge-content"><svg width="10.67" height="16" viewBox="0 0 50 75" fill="none" class="replit-logo">
-        <path d="M25 19.995C25 20.0375 25 20.0575 25 20.085C25.015 21.34 25.5475 22.6275 26.425 23.525C26.445 23.545 26.4475 23.5475 26.45 23.55C26.485 23.585 26.5025 23.6025 26.54 23.6375C27.4225 24.485 28.6775 25.005 29.9025 25.03C29.9525 25.03 29.9975 25.03 30.0825 25.03H42C44.8 25.03 46.2 25.03 47.27 25.575C48.21 26.055 48.975 26.82 49.455 27.76C50 28.83 50 30.23 50 33.03V42.03C50 44.83 50 46.23 49.455 47.3C48.975 48.24 48.21 49.005 47.27 49.485C46.2 50.03 44.8 50.03 42 50.03H29.9275C28.6425 50.0325 27.3225 50.58 26.4125 51.485C26.4075 51.49 26.4775 51.42 26.45 51.4475C26.445 51.4525 26.4425 51.4525 26.4225 51.475C25.545 52.3725 25.0125 53.6575 24.9975 54.9125C24.9975 54.94 24.9975 54.9625 24.9975 55.0025V67.0575C24.9975 69.8575 24.9975 71.2575 24.4525 72.3275C23.9725 73.2675 23.2075 74.0325 22.2675 74.5125C21.1975 75.0575 19.7975 75.0575 16.9975 75.0575H7.9975C5.1975 75.0575 3.7975 75.0575 2.7275 74.5125C1.7875 74.0325 1.0225 73.2675 0.542498 72.3275C-0.00250244 71.2575 -0.00250244 69.8575 -0.00250244 67.0575V58.0575C-0.00250244 55.2575 -0.00250244 53.8575 0.542498 52.7875C1.0225 51.8475 1.7875 51.0825 2.7275 50.6025C3.7975 50.0575 5.1975 50.0575 7.9975 50.0575H19.7225C19.9 50.0575 19.9875 50.0575 20.08 50.055C21.2475 50.0125 22.4375 49.52 23.295 48.7225C23.3625 48.66 23.4125 48.61 23.5125 48.51C23.55 48.4725 23.5675 48.455 23.6025 48.42C24.455 47.5325 24.9725 46.2825 24.9975 45.0525C24.9975 45.0025 24.9975 44.96 24.9975 44.875V30.12C24.9975 30.0325 24.9975 29.99 24.9975 29.94C24.9725 28.71 24.455 27.46 23.6025 26.575C23.5675 26.54 23.55 26.52 23.5125 26.4825C23.475 26.445 23.4575 26.4275 23.42 26.3925C22.5325 25.54 21.2825 25.0225 20.0525 24.9975C20.0025 24.9975 19.96 24.9975 19.875 24.9975H7.9975C5.1975 24.9975 3.7975 24.9975 2.7275 24.4525C1.7875 23.9725 1.0225 23.2075 0.542498 22.2675C-0.00250244 21.1975 -0.00250244 19.7975 -0.00250244 16.9975V7.9975C-2.44146e-06 5.2 -2.44379e-06 3.8 0.544998 2.73C1.025 1.79 1.79 1.025 2.73 0.545C3.8 0 5.2 0 8 0H17C19.8 0 21.2 0 22.27 0.545C23.21 1.025 23.975 1.79 24.455 2.73C25 3.8 25 5.2 25 8V19.995Z" fill="currentColor"></path>
-      </svg><span class="flip ready" style="width: 92px;"><span class="row in" data-key="brand" aria-hidden="false" style="">Made with Replit</span><span class="row out" data-key="cta" aria-hidden="true">Build yours free →</span></span></div><button class="close-button" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon">
-        <path d="M18 6 6 18"></path>
-        <path d="m6 6 12 12"></path>
-      </svg></button></div></template></div></body></html>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard View -->
+            <section id="dashboard" class="view active">
+                <div class="header">
+                    <h1>Dashboard Overview</h1>
+                    <p>Track your customer payments at a glance</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-label">Total Active Debt</span>
+                            <span class="metric-icon">📈</span>
+                        </div>
+                        <div class="metric-value" id="totalDebt">$0.00</div>
+                        <p class="metric-desc">Across all customers</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-label">Total Paid</span>
+                            <span class="metric-icon">✅</span>
+                        </div>
+                        <div class="metric-value" id="totalPaid">$0.00</div>
+                        <p class="metric-desc">Lifetime payments received</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-label">Customers in Debt</span>
+                            <span class="metric-icon">👥</span>
+                        </div>
+                        <div class="metric-value" id="customersInDebt">0</div>
+                        <p class="metric-desc" id="totalCustomersText">Out of 0 total customers</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-label">Highest Debtor</span>
+                            <span class="metric-icon">⚠️</span>
+                        </div>
+                        <div class="metric-value" id="highestDebtor">None</div>
+                        <p class="metric-desc" id="highestDebtAmount">$0.00</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h2>Top Debtors</h2>
+                    <div id="topDebtorsContainer" class="debtors-list">
+                        <p class="empty-state">No customers currently in debt.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Customers View -->
+            <section id="customers" class="view">
+                <div class="header">
+                    <div class="header-top">
+                        <div>
+                            <h1>Customers</h1>
+                            <p>Manage all your customers and their payments</p>
+                        </div>
+                        <button class="btn-primary" onclick="showAddCustomerModal()">+ Add Customer</button>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search customers by name..."
+                        onkeyup="filterCustomers()"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- Customers Table -->
+                <div class="table-container">
+                    <table class="customers-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Initial Amount</th>
+                                <th>Paid Amount</th>
+                                <th>Remaining</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customersTableBody">
+                            <tr class="empty-row">
+                                <td colspan="6" class="empty-message">No customers yet. Add one to get started!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Customer Details View -->
+            <section id="customerDetail" class="view">
+                <div class="detail-header">
+                    <button class="btn-back" onclick="showCustomers()">← Back to Customers</button>
+                    <h1 id="detailCustomerName">Customer Details</h1>
+                </div>
+
+                <div class="detail-container">
+                    <div class="detail-card">
+                        <h2>Payment Information</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Initial Amount</label>
+                                <p id="detailInitialAmount">$0.00</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Total Paid</label>
+                                <p id="detailPaidAmount">$0.00</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Remaining Balance</label>
+                                <p id="detailRemainingAmount">$0.00</p>
+                            </div>
+                            <div class="info-item">
+                                <label>Status</label>
+                                <p id="detailStatus">-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-cards">
+                        <div class="action-card add-payment">
+                            <h3>Add Payment</h3>
+                            <p>Record a payment from this customer</p>
+                            <input 
+                                type="number" 
+                                id="addPaymentAmount" 
+                                placeholder="Enter amount" 
+                                class="input-field"
+                                min="0"
+                                step="0.01"
+                            >
+                            <button class="btn-action" onclick="addPayment()">➕ Add Payment</button>
+                        </div>
+
+                        <div class="action-card subtract-payment">
+                            <h3>Subtract Payment</h3>
+                            <p>Deduct an amount from this customer's balance</p>
+                            <input 
+                                type="number" 
+                                id="subtractPaymentAmount" 
+                                placeholder="Enter amount" 
+                                class="input-field"
+                                min="0"
+                                step="0.01"
+                            >
+                            <button class="btn-action" onclick="subtractPayment()">➖ Subtract</button>
+                        </div>
+                    </div>
+
+                    <div class="delete-section">
+                        <button class="btn-danger" onclick="deleteCurrentCustomer()">🗑️ Delete Customer</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Add Customer Modal -->
+    <div id="addCustomerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Customer</h2>
+                <button class="modal-close" onclick="closeAddCustomerModal()">×</button>
+            </div>
+            <form onsubmit="submitAddCustomer(event)">
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input 
+                        type="text" 
+                        id="customerName" 
+                        required 
+                        placeholder="Enter customer name"
+                        class="input-field"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="initialAmount">Initial Amount ($)</label>
+                    <input 
+                        type="number" 
+                        id="initialAmount" 
+                        required 
+                        placeholder="Enter initial amount"
+                        class="input-field"
+                        min="0"
+                        step="0.01"
+                    >
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" onclick="closeAddCustomerModal()">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Customer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Customer Modal -->
+    <div id="editCustomerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Customer</h2>
+                <button class="modal-close" onclick="closeEditCustomerModal()">×</button>
+            </div>
+            <form onsubmit="submitEditCustomer(event)">
+                <div class="form-group">
+                    <label for="editCustomerName">Customer Name</label>
+                    <input 
+                        type="text" 
+                        id="editCustomerName" 
+                        required 
+                        class="input-field"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="editInitialAmount">Initial Amount ($)</label>
+                    <input 
+                        type="number" 
+                        id="editInitialAmount" 
+                        required 
+                        class="input-field"
+                        min="0"
+                        step="0.01"
+                    >
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" onclick="closeEditCustomerModal()">Cancel</button>
+                    <button type="submit" class="btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
