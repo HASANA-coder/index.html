@@ -237,13 +237,13 @@ function addPayment() {
         return;
     }
 
-    const remaining = customer.initialAmount - customer.paidAmount;
-    if (amount > remaining) {
-        alert(`Cannot add more than the remaining balance of ${formatCurrency(remaining)}`);
-        return;
-    }
+    // const remaining = customer.initialAmount - customer.paidAmount;
+    // if (amount > remaining) {
+    //     alert(`Cannot add more than the remaining balance of ${formatCurrency(remaining)}`);
+    //     return;
+    // }
 
-    customer.paidAmount += amount;
+    customer.initialAmount += amount;
     saveCustomers();
     updateCustomerDetail();
     updateDashboard();
@@ -260,12 +260,12 @@ function subtractPayment() {
         return;
     }
 
-    if (amount > customer.paidAmount) {
-        alert(`Cannot subtract more than the paid amount of ${formatCurrency(customer.paidAmount)}`);
-        return;
-    }
+    // if (amount > customer.paidAmount) {
+    //     alert(`Cannot subtract more than the paid amount of ${formatCurrency(customer.paidAmount)}`);
+    //     return;
+    // }
 
-    customer.paidAmount -= amount;
+    customer.initialAmount -= amount;
     saveCustomers();
     updateCustomerDetail();
     updateDashboard();
